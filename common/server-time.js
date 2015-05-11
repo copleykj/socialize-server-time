@@ -3,7 +3,7 @@ ServerTime = {
 };
 
 ServerTime.now = function () {
-    return Date.now() - this._timeDifference;
+    return Date.now() + this._timeDifference;
 };
 
 ServerTime.date = function() {    
