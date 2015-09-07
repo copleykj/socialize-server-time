@@ -1,5 +1,5 @@
 Meteor.methods({
-    'getServerTime': function() {
+    'socialize:getServerTime': function() {
         return Date.now();
     }
 });

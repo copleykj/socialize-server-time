@@ -1,7 +1,7 @@
 ServerTime.init = function() {
     ServerTime._diffStart = Date.now();
 
-    Meteor.call("getServerTime", function(error,serverTimeStamp){
+    Meteor.call("socialize:getServerTime", function(error,serverTimeStamp){
         if(!error){
             var now = Date.now();
             var latency = now - ServerTime._diffStart;
