@@ -9,6 +9,8 @@ Package.describe({
 Package.onUse(function _(api) {
     api.versionsFrom('1.3');
 
+    api.use('ecmascript');
+
     api.mainModule('server/server-time.js', 'server');
     api.mainModule('client/server-time.js', 'client');
 });
