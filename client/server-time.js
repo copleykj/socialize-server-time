@@ -1,22 +1,32 @@
-ServerTime.init = function() {
+/* eslint-disable import/no-unresolved */
+import { Meteor } from 'meteor/meteor';
+
+/* eslint-enable import/no-unresolved */
+
+import { ServerTime } from '../common/server-time';
+
+ServerTime.init = () => {
     ServerTime._diffStart = Date.now();
 
-    Meteor.call("socialize:getServerTime", function(error,serverTimeStamp){
-        if(!error){
-            var now = Date.now();
-            var latency = now - ServerTime._diffStart;
-            
-            ServerTime._timeDifference = serverTimeStamp + latency - now;
-        }else{
-            throw(error); 
+    Meteor.call('socialize:getServerTime', (error, serverTimeStamp) => {
+        if (!error) {
+            const now = Date.now();
+            const latency = now - ServerTime._diffStart;
+
+            ServerTime._timeDifference = (serverTimeStamp + latency) - now;
+        } else {
+            throw (error);
         }
     });
 };
 
-//At startup, wait a couple seconds so that we can get a more accurate latency estimation.
-//This is far from optimal but should work.
-Meteor.startup(function(){
-    Meteor.setTimeout(function(){
+// At startup, wait a couple seconds so that we can get a more accurate latency estimation.
+// This is far from optimal but should work.
+Meteor.startup(() => {
+    Meteor.setTimeout(() => {
         ServerTime.init();
     }, 2000);
 });
+
+/* eslint-disable import/prefer-default-export */
+export { ServerTime };

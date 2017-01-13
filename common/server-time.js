@@ -1,11 +1,8 @@
-ServerTime = {
-    _timeDifference: 0
+/* eslint-disable import/prefer-default-export */
+export const ServerTime = {
+    _timeDifference: 0,
 };
 
-ServerTime.now = function () {
-    return Date.now() + this._timeDifference;
-};
+ServerTime.now = () => Date.now() + this._timeDifference;
 
-ServerTime.date = function() {    
-    return new Date(this.now());
-};
+ServerTime.date = () => new Date(this.now());
