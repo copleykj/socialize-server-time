@@ -11,8 +11,4 @@ Meteor.methods({
     },
 });
 
-// Unify client / server api
-ServerTime.now = () => Date.now();
-
-/* eslint-disable import/prefer-default-export */
 export { ServerTime };

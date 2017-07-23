@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+/* global Package*/
 Package.describe({
     name: 'socialize:server-time',
     summary: 'Package to compensate for client/server time difference',

@@ -28,5 +28,4 @@ Meteor.startup(() => {
     }, 2000);
 });
 
-/* eslint-disable import/prefer-default-export */
 export { ServerTime };
