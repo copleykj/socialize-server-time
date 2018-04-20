@@ -1,6 +1,6 @@
 {
     "name": "@socialize/server-time",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "description": "Meteor's socialize:server-time package ported for React Native",
     "main": "entry-rn.js",
     "scripts": {
