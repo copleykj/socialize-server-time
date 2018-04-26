@@ -30,6 +30,14 @@ $ meteor add socialize:server-time
 $ npm install --save @socialize/server-time
 ```
 
+> **Note**
+>
+>  When using with React Native, you'll need to connect to a server which hosts the server side Meteor code for your app using `Meteor.connect` as per the [@socialize/react-native-meteor](https://www.npmjs.com/package/@socialize/react-native-meteor#example-usage) documentation.
+
+ ```javascript
+Meteor.connect('ws://192.168.X.X:3000/websocket');
+ ```
+
 ## API
 
 `ServerTime.now()` - returns a difference compensated timestamp representing the current time on the server.
