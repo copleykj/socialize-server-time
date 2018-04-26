@@ -10,8 +10,7 @@ A super light weight package to compensate for the difference in time on the ser
   - [Meteor Installation](#meteor-installation)
   - [React Native Installation](#react-native-installation)
   - [API](#api)
-  - [Meteor Usage Example](#meteor-usage-example)
-  - [React Native Usage Example](#react-native-usage-example)
+  - [Usage Example](#usage-example)
 
 <!-- TOC END -->
 
@@ -46,19 +45,20 @@ Meteor.connect('ws://192.168.X.X:3000/websocket');
 
 `ServerTime.date()` - returns a difference compensated Date() object representing the current date on the server.
 
-## Meteor Usage Example
+## Usage Example
 
 ```javascript
+// Meteor
 import { ServerTime } from 'meteor/socialize:server-time';
+```
 
+```javascript
+// React
+import { ServerTime } from 'meteor/socialize:server-time';
+```
+
+```javascript
 let compensatedDate = ServerTime.date();
 ```
 
-## React Native Usage Example
-
-```javascript
-import { ServerTime } from 'meteor/socialize:server-time';
-
-let compensatedDate = ServerTime.date();
-```
 [meteor]: https://meteor.com
