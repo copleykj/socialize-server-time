@@ -2,6 +2,8 @@
 
 A super light weight package to compensate for the difference in time on the server and client.
 
+>This is a [Meteor][meteor] package with part of it's code published as a companion NPM package made to work with React Native. This allows your Meteor and React Native projects that use this package to share code between them to give you a competitive advantage when bringing your mobile and web application to market.
+
 <!-- TOC START min:1 max:3 link:true update:true -->
 - [Server Time](#server-time)
   - [Supporting the Project](#supporting-the-project)
@@ -59,3 +61,4 @@ import { ServerTime } from 'meteor/socialize:server-time';
 
 let compensatedDate = ServerTime.date();
 ```
+[meteor]: https://meteor.com
