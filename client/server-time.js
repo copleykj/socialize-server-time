@@ -17,9 +17,7 @@ export default ({ Meteor }) => {
     };
 
     if (!Meteor.isReactNative) {
-        // At startup, wait a couple seconds so that we can get a more accurate latency estimation.
-        // This is far from optimal but should work.
-        Meteor.startup(() => Meteor.setTimeout(() => ServerTime.init(), 2000));
+        
     } else {
         setTimeout(() => ServerTime.init(), 2000);
     }
