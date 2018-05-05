@@ -12,5 +12,5 @@ Package.onUse(function _(api) {
     api.use('ecmascript');
 
     api.mainModule('server/server-time.js', 'server');
-    api.mainModule('client/server-time.js', 'client');
+    api.mainModule('client/entry-meteor.js', 'client');
 });
