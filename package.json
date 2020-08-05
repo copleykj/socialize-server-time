@@ -22,5 +22,19 @@
     "homepage": "https://github.com/copleykj/socialize-server-time#readme",
     "dependencies": {
         "@socialize/react-native-meteor": "^2.0.2"
-    }
+    },
+    "funding": [
+      {
+        "type" : "github",
+        "url" : "https://github.com/sponsors/copleykj"
+      },
+      {
+        "type" : "patreon",
+        "url" : "https://www.patreon.com/copleykj"
+      },
+      {
+        "type" : "paypal",
+        "url" : "https://www.paypal.me/copleykj"
+      }
+    ]
 }
