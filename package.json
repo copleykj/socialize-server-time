@@ -1,11 +1,11 @@
 {
     "name": "@socialize/server-time",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Meteor's socialize:server-time package ported for React Native",
     "main": "entry-rn.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "publish": "meteor npm i && npm prune --production && meteor publish && meteor npm i",
+        "publish": "rimraf ./node_modules && meteor publish && meteor npm i --only=dev",
         "publish-release": "npm publish --access public"
     },
     "repository": {
@@ -25,6 +25,9 @@
     "homepage": "https://github.com/copleykj/socialize-server-time#readme",
     "dependencies": {
         "@socialize/react-native-meteor": "^2.0.2"
+    },
+    "devDependencies": {
+      "rimraf":"^3.0.2"
     },
     "funding": [
         {

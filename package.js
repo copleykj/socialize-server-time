@@ -2,7 +2,7 @@
 Package.describe({
     name: 'socialize:server-time',
     summary: 'Package to compensate for client/server time difference',
-    version: '1.0.1',
+    version: '1.0.2',
     git: 'https://github.com/copleykj/socialize-server-time.git',
 });
 
