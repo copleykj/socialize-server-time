@@ -27,7 +27,7 @@
         "@socialize/react-native-meteor": "^2.0.2"
     },
     "devDependencies": {
-      "rimraf":"^3.0.2"
+        "rimraf": "^3.0.2"
     },
     "funding": [
         {
