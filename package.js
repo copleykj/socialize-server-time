@@ -2,12 +2,12 @@
 Package.describe({
     name: 'socialize:server-time',
     summary: 'Package to compensate for client/server time difference',
-    version: '1.0.2',
+    version: '1.0.3',
     git: 'https://github.com/copleykj/socialize-server-time.git',
 });
 
 Package.onUse(function _(api) {
-    api.versionsFrom('1.10.2');
+    api.versionsFrom(['1.10.2', '2.3']);
 
     api.use('ecmascript');
 
