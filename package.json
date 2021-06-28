@@ -24,7 +24,7 @@
     },
     "homepage": "https://github.com/copleykj/socialize-server-time#readme",
     "dependencies": {
-        "@socialize/react-native-meteor": "^2.0.2"
+        "@socialize/react-native-meteor": "^3.0.2"
     },
     "devDependencies": {
         "rimraf": "^3.0.2"
