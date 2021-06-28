@@ -2,12 +2,14 @@
 
 A super light weight package to compensate for the difference in time on the server and client.
 
->This is a [Meteor][meteor] package with part of it's code published as a companion NPM package made to work with React Native. This allows your Meteor and React Native projects that use this package to share code between them to give you a competitive advantage when bringing your mobile and web application to market.
+>This is a [Meteor][meteor] package with part of it's code published as a companion NPM package made to work with clients other than Meteor. For example your server is Meteor, but you want to build a React Native app for the client. This allows you to share code between your Meteor server and other clients to give you a competitive advantage when bringing your mobile and web application to market.
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 - [Supporting The Project](#supporting-the-project)
 - [Meteor Installation](#meteor-installation)
-- [React Native Installation](#react-native-installation)
+- [NPM Installation](#npm-installation)
+- [Usage Outside Meteor](#usage-outside-meteor)
+  - [React Native](#react-native)
 - [API](#api)
 - [Usage Example](#usage-example)
 <!-- /TOC -->
@@ -22,19 +24,25 @@ Finding the time to maintain FOSS projects can be quite difficult. I am myself r
 meteor add socialize:server-time
 ```
 
-## React Native Installation
+## NPM Installation
 
 ```shell
 npm install --save @socialize/server-time
 ```
 
-> **Note**
->
-> When using with React Native, you'll need to connect to a server which hosts the server side Meteor code for your app using `Meteor.connect` as per the [@socialize/react-native-meteor](https://www.npmjs.com/package/@socialize/react-native-meteor#example-usage) documentation.
+## Usage Outside Meteor
+
+The client side parts of this package are published to NPM as `@socialize/server-time` for use in front ends outside of Meteor.
+
+When using the npm package you'll need to connect to a server, which hosts the server side Meteor code for your app, using `Meteor.connect` as per the [@socialize/react-native-meteor usage example](https://github.com/copleykj/react-native-meteor#example-usage) documentation.
 
  ```javascript
 Meteor.connect('ws://192.168.X.X:3000/websocket');
  ```
+
+### React Native
+
+When using this package with React Native there is some minor setup required by the `@socialize/react-native-meteor` package. See [@socialize/react-native-meteor react-native](https://github.com/copleykj/react-native-meteor#react-native) for necessary instructions.
 
 ## API
 
